@@ -1,9 +1,10 @@
 let taskInput = document.getElementById('taskInput'); // the input
 let liveText = document.getElementById('liveText'); // the live text
 let allTasks = document.querySelector('#allTasks'); // the ul
-let getLocalData = localStorage.getItem('allTasks'); // get local storage data
-
-allTasks.innerHTML = getLocalData; // insert the saved data to the html
+let savedLocalData = localStorage.getItem('allTasks'); // get local storage data
+if (savedLocalData) {
+    allTasks.innerHTML = savedLocalData; // insert the saved data to the html
+}
 taskInput.addEventListener('keyup', function() {
     liveText.innerText = taskInput.value ;
     let  TaskText = taskInput.value;
