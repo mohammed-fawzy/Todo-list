@@ -1,0 +1,12 @@
+li {
+    display: flex !important;
+    justify-content: space-between;
+    margin-bottom: 15px !important;
+    word-break: break-all;
+    list-style-type: disc;
+    align-items: center;
+}
+
+li button {
+    margin-left: 10px;
+}
