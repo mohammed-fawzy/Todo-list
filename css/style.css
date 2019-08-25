@@ -1,12 +1,41 @@
+.form-group{
+    height: 80px;
+}
 li {
     display: flex !important;
-    justify-content: space-between;
-    margin-bottom: 15px !important;
+    margin-bottom: 25px !important;
     word-break: break-all;
-    list-style-type: disc;
     align-items: center;
+    text-transform: capitalize;
 }
+.task-info {
+    list-style-type: disc;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
 
+}
+.task-info.doneClass {
+    text-decoration: line-through;
+}
 li button {
     margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    position: absolute;
+    right: -9px;
+    top: -13px;
+}
+li select {
+    width: 100px !important;
+}
+.task-date {
+    position: absolute;
+    top: 1px;
+    color: #dc3545;
+    font-size: 11px;
 }
