@@ -1,0 +1,87 @@
+.form-group{
+    height: 80px;
+}
+
+
+.list-group-item {
+    display: flex !important;
+    flex-flow: column;
+    margin-bottom: 25px !important;
+    word-break: break-all;
+    align-items: center;
+    text-transform: capitalize;
+    .task-info {
+        margin-top: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 10px;
+        .task-text-value {
+            margin-right: 25px;
+            &:disabled {
+                background-color: #fff !important;
+                border:0;
+            }
+        }
+        .doneClass {
+            text-decoration: line-through;
+        }
+        .delete-btn {
+            margin-left: 10px;
+            width: 25px;
+            height: 25px;
+            padding: 0 !important;
+            border-radius: 50% !important;
+            position: absolute;
+            right: -9px;
+            top: -13px;
+        }
+        .edit-btn {
+            height: 31px !important;
+            line-height: 0; 
+            font-size: 14px;
+            width: 73px;
+        }
+        .task-date {
+            position: absolute;
+            top: 4px;
+            color: #dc3545;
+            font-size: 12px;
+        }
+    }
+    .edit-select-div{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        button{
+            width: 100px !important;
+        }
+        select {
+            width: 100px !important;
+            margin-bottom: 10px;
+        }
+    }
+
+    .form-end-data{
+        display: flex;
+        align-items: center;
+        label{
+            white-space: nowrap;
+            margin-right: 18px;
+        }
+    }
+    .bottom-info {
+        p span {
+            background: red;
+            padding: 0px 4px;
+            border-radius: 5px;
+            color: #fff;
+            &:empty {
+                background: #fff;
+            }
+        }
+    }
+
+}
+
